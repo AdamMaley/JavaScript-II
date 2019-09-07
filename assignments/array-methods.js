@@ -58,11 +58,22 @@ const runners = [
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs. Combine both the first and last names and populate a new array called `fullNames`. This array will contain just strings.
 let fullNames = [];
+const runnerNames(){
+  runners.forEach((runner) => {
+    return runners.first_name + runners.last_name;
+  }
+  fullNames.push(runnerNames);
+});
+
 console.log(fullNames);
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. Populate an array called `firstNamesAllCaps`. This array will contain just strings.
 let firstNamesAllCaps = [];
+const uppercaseNames = runners.map(firstName){
+  return first_name.toUpperCase;
+}
+firstNamesAllCaps.push(uppercaseNames);
 console.log(firstNamesAllCaps);
 
 // ==== Challenge 3: Use .filter() ====
